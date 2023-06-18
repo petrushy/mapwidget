@@ -23,6 +23,20 @@ export function render(view) {
     let width = view.model.get("width");
     let height = view.model.get("height");
 
+    let timeline = view.model.get('timeline');
+    // let animation = view.model.get('animation');
+    // let baseLayerPicker = view.model.get('base_layer_picker');
+    // let geocoder = view.model.get('geocoder');
+    // let homeButton = view.model.get('home_button');
+    // let infoBox = view.model.get('infobox');
+    // let sceneModePicker = view.model.get('scene_mode_picker');
+    // let selectionIndicator = view.model.get('selection_indicator');
+    // let navigationHelpButton = view.model.get('navigation_help_button');
+    // let navigationInstructionsInitiallyVisible = view.model.get('navigation_instructions_initially_visible');
+    // let scene3DOnly = view.model.get('scene_3D_only');
+    // let sceneMode_name = view.model.get('scene_mode');
+
+
     const div = document.createElement("div");
     div.style.width = width;
     div.style.height = height;
@@ -34,9 +48,9 @@ export function render(view) {
         terrainProvider: Cesium.createWorldTerrain(),
     });
 
-    const buildingTileset = viewer.scene.primitives.add(
-        Cesium.createOsmBuildings()
-    );
+    //const buildingTileset = viewer.scene.primitives.add(
+    //    Cesium.createOsmBuildings()
+    //);
 
     viewer.camera.flyTo({
         destination: Cesium.Cartesian3.fromDegrees(

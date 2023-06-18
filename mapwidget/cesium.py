@@ -23,3 +23,23 @@ class Map(anywidget.AnyWidget):
     height = traitlets.Unicode('600px').tag(sync=True, o=True)
     clicked_latlng = traitlets.List([None, None]).tag(sync=True, o=True)
     altitude = traitlets.Float(0).tag(sync=True, o=True)
+
+    # czml = traitlets.Tuple().tag(sync=True, o=True)
+    # kml_url = traitlets.Unicode().tag(sync=True, o=True)
+    # geojson = traitlets.Unicode().tag(sync=True, o=True)
+    # animation = traitlets.Bool(True).tag(sync=True, o=True)
+    # base_layer_picker = traitlets.Bool(True).tag(sync=True, o=True)
+    # geocoder = traitlets.Bool(True).tag(sync=True, o=True)
+    # home_button = traitlets.Bool(True).tag(sync=True, o=True)
+    # infobox = traitlets.Bool(True).tag(sync=True, o=True)
+    # scene_mode_picker = traitlets.Bool(True).tag(sync=True, o=True)
+    # selection_indicator = traitlets.Bool(True).tag(sync=True, o=True)
+        
+    timeline = traitlets.Bool(True).tag(sync=True, o=True)
+    # navigation_help_button = traitlets.Bool(True).tag(sync=True, o=True)
+    # navigation_instructions_initially_visible = traitlets.Bool(False).tag(sync=True, o=True)
+    # scene_3D_only = traitlets.Bool(False).tag(sync=True, o=True)
+    # scene_mode = traitlets.CaselessStrEnum(['COLUMBUS_VIEW', 'SCENE2D', 'SCENE3D'],
+    #                              default_value='SCENE3D',
+    #                              allow_none=False).tag(sync=True, o=True)
+    # enable_lighting = traitlets.Bool(False).tag(sync=True, o=True)
